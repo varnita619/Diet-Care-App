@@ -1,26 +1,38 @@
-*{
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgba(255, 233, 233, 0.014);
+    height: 100%;
 }
-.hero-heading{
+
+.hero-heading {
     margin: 70px 0px 15px 0px;
     text-align: center;
 }
-.hero-para{
+
+.hero-para {
     text-align: center;
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 20px;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
-.search-box input{
+
+.search-box input {
     justify-content: center;
     border: 1px solid rgb(247, 81, 69);
     border-radius: 20px;
@@ -29,7 +41,8 @@ main{
     outline: none;
     text-align: center;
 }
-.search-box button{
+
+.search-box button {
     border-radius: 7px;
     cursor: pointer;
     background-color: rgb(247, 81, 69);
@@ -39,18 +52,85 @@ main{
     color: #fff;
     outline: none;
 }
-.card{
-    width: 300px;
-    height: 300px;
+
+.card {
+    /* width: 300px;
+    height: 300px; */
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.123);
     margin: 10px;
+    background-size: cover;
+    min-height: 350px;
 }
-.card img{
-    width: 100%;
+
+.icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17BEBB;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17BEBB;
 }
-.column{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+
+.card img {
+    max-width: 100%;
 }
+
+.row {
+    position: relative;
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 30px 2px #000;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text .food {
+    color: black;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+
+.fa-clock-o {
+    color: gray;
+    margin: 0 30px;
+}
+
+.fa-users {
+    color: gray;
+}
+
+.stars {
+    margin: 10px 30px;
+}
+
+li a i {
+    color: #FFE500;
+}
+a.btn {
+    display: block;
+    background: #EF3E36;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: 250ms;
+}
+    a.btn:hover {
+       background: #cc4740;
+       transition: 250ms;
+    }

@@ -14,25 +14,42 @@ meal_btn.addEventListener('click', () => {
             return res.json()
         })
         .then((data) => {
-           
-          var card = ''
 
-          data.meals.forEach((each) => {
-              console.log(each)
-              card += `
-              
-              <div class="card">
-              <div class="icon">
-              <a href="#"><i class="fa fa-heart-o"></i></a>
-              </div>
+            var card = ''
+
+            data.meals.forEach((each) => {
+                console.log(each)
+                card += `
                   <img src= https://spoonacular.com/recipeImages/${each.id}-312x150.jpg />
-                  <h4>${each.title}</h4>
-                  </div>
+                  <div class="card">
+                    <div class="icon">
+                    <a href="#"><i class="fa fa-heart-o"></i></a>
+                    </div>
+                  <div class="text">
+                    <h1 class="food">
+                        ${each.title}
+                    </h1>
+                    <i class="fa fa-clock-o">${each.readyInMinutes}</i>
+                    <i class="fa fa-users">${each.servings}</i>
+
+                    <div class="stars">
+         <li>
+            <a href="#"><i class="fa fa-star"></i></a>
+            <a href="#"><i class="fa fa-star"></i></a>
+            <a href="#"><i class="fa fa-star"></i></a>
+            <a href="#"><i class="fa fa-star"></i></a>
+            <a href="#"><i class="fa fa-star-o"></i></a>
+         </li>
+      </div>
+      </div>
+      <a href="#" class="btn">Let's Cook!</a>
+      </div>
+                  
 
               `
 
-              meal_output.innerHTML = card
-          })
+                meal_output.innerHTML = card
+            })
 
 
         })
