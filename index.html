@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="./style.css">
+
+     <!--Fontawesome link-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1 class="hero-heading">Healthy Food Recipes</h1>
+      <p class="hero-para">
+        Search food according to calories you want to consume..
+      </p>
+    </header>
+
+    <main>
+        <div class="search-box">
+          <input type="number" id="search-bar" placeholder="enter calories(eg-1000)">   
+          <button id="meal-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </main>
+
+    <h6 id="nutrients_output"></h6>
+    <div class="row">
+      <div class="column"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
