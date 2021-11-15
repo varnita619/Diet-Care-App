@@ -22,6 +22,9 @@ meal_btn.addEventListener('click', () => {
               card += `
               
               <div class="card">
+              <div class="icon">
+              <a href="#"><i class="fa fa-heart-o"></i></a>
+              </div>
                   <img src= https://spoonacular.com/recipeImages/${each.id}-312x150.jpg />
                   <h4>${each.title}</h4>
                   </div>

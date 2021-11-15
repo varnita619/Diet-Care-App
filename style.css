@@ -1,14 +1,20 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(255, 233, 233, 0.014);
 }
 .hero-heading{
-    margin-top: 50px;
+    margin: 70px 0px 15px 0px;
     text-align: center;
 }
 .hero-para{
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+    margin-bottom: 20px;
 }
 main{
     display: flex;
@@ -16,12 +22,22 @@ main{
 }
 .search-box input{
     justify-content: center;
-    border: 1px solid rgb(214, 106, 99);
+    border: 1px solid rgb(247, 81, 69);
     border-radius: 20px;
     width: 200px;
-    padding: 5px;
+    padding: 10px;
     outline: none;
     text-align: center;
+}
+.search-box button{
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(247, 81, 69);
+    padding: 7px 7px;
+    border: 1px solid rgb(247, 81, 69);
+    text-align: center;
+    color: #fff;
+    outline: none;
 }
 .card{
     width: 300px;

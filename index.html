@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- Stylesheet link -->
-    <link rel="stylesheet" href="./style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Care</title>
 
-     <!--Fontawesome link-->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  </head>
-  <body>
-    <header>
-      <h1 class="hero-heading">Healthy Food Recipes</h1>
-      <p class="hero-para">
-        Search food according to calories you want to consume..
-      </p>
-    </header>
+  <!-- Stylesheet link -->
+  <link rel="stylesheet" href="./style.css">
 
-    <main>
-        <div class="search-box">
-          <input type="number" id="search-bar" placeholder="enter calories(eg-1000)">   
-          <button id="meal-btn"><i class="fas fa-search"></i></button>
-        </div>
-    </main>
+  <!--Fontawesome link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <h6 id="nutrients_output"></h6>
-    <div class="row">
-      <div class="column"></div>
+  <!-- Google fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1 class="hero-heading">Healthy Food Recipes</h1>
+    <p class="hero-para">
+      Search food according to calories you want to consume..
+    </p>
+  </header>
+
+  <main>
+    <div class="search-box">
+      <input type="number" id="search-bar" placeholder="enter calories(eg-1000)">
+      <button id="meal-btn"><i class="fas fa-search"></i></button>
     </div>
+  </main>
 
-    <script src="./app.js"></script>
-  </body>
+  <h6 id="nutrients_output"></h6>
+  <div class="row">
+    <div class="column"></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
 </html>
-
