@@ -20,10 +20,13 @@ meal_btn.addEventListener('click', () => {
             data.meals.forEach((each) => {
                 console.log(each)
                 card += `
-                  <img src= https://spoonacular.com/recipeImages/${each.id}-312x150.jpg />
-                  <div class="card">
+                <div class="card">
+                  
+                  <div class="header">
+                  <img src= https://spoonacular.com/recipeImages/${each.id}-480x360.jpg />
                     <div class="icon">
                     <a href="#"><i class="fa fa-heart-o"></i></a>
+                    </div>
                     </div>
                   <div class="text">
                     <h1 class="food">
@@ -42,7 +45,7 @@ meal_btn.addEventListener('click', () => {
          </li>
       </div>
       </div>
-      <a href="#" class="btn">Let's Cook!</a>
+      <a href='${each.sourceUrl}' class="btn">Let's Cook!</a>
       </div>
                   
 
